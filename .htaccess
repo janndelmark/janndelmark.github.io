@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP_HOST} ^janndelmark.github.io$ [OR]
+  RewriteCond %{HTTP_HOST} ^www.janndelmark.github.io$
+  RewriteRule (.*)$ https://janndelrosario.com/$1 [R=301,L]
+</IfModule>
